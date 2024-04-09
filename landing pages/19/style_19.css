@@ -1,0 +1,144 @@
+
+/* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header container styles */
+.header-container {
+  text-align: start ;
+  margin-bottom: 40px;
+}
+
+.header-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-container p {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px
+}
+
+/* Main container styles */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content-container {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.ingredients-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.ingredient-item {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.ingredient-item img {
+  width: 100%;
+  height: auto;
+}
+
+.chef-info-container h2 {
+  margin-bottom: 10px;
+}
+
+.chef-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.chef-icons img {
+  width: 16%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .content-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .ingredients-container {
+    justify-content: space-around;
+  }
+
+  .ingredient-item {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ingredients-container {
+    flex-wrap: wrap;
+  }
+
+  .ingredient-item {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .chef-icons {
+    flex-wrap: wrap;
+  }
+
+  .chef-icons img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}

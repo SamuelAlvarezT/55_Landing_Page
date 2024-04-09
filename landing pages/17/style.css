@@ -1,0 +1,85 @@
+body{
+  overflow: auto;
+}
+.project-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .project-content {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-right: 20px;
+  }
+  .explore-btn{
+    background-color: rgb(37, 37, 37);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+  }
+  
+  .project-tiles {
+    flex: 0 0 30%;
+    max-width: 30%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .tile {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .project-images {
+    flex: 0 0 35%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-images img {
+    
+    display: flex;
+
+    width: 32%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .project-content,
+    .project-tiles,
+    .project-images {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .project-tiles,
+    .project-images {
+      margin-top: 20px;
+    }
+  
+    .tile {
+      flex: 0 0 48%;
+      max-width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tile {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .project-images img {
+      width: 32%;
+      margin-bottom: 10px;
+    }
+  }

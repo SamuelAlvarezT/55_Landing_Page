@@ -1,0 +1,105 @@
+body{
+  background-image: url(images/AI_image_OpenAI.png );
+  margin: 0;
+  padding: 0;
+
+}
+.space-travel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background:linear-gradient(  rgb(0,0,0),rgb(6, 22, 29));
+    opacity: 0.7;
+    
+    border-radius: 25px;
+    color: #fff     ;
+  }
+  
+  .content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 20px;
+    text-align:center;
+  }
+  
+  .features {
+    flex: 0 0 45%;
+    max-width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .feature {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .explore-btn {
+    border-radius: 20px;
+    background:rgb(99, 225, 225);
+    color:rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+    backdrop-filter: blur(10px)
+  }
+
+  .container{
+    padding: 20px;
+    
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .content,
+    .features {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .features {
+      margin-top: 20px;
+    }
+  
+    .feature {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feature {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  table {
+    width: 500px;
+    height: 200px;
+    border: none;
+  }
+  
+  .feature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background:linear-gradient(  rgb(0,0,0),rgb(6, 22, 29));
+    opacity: 0.7;
+    border-radius: 25px;
+    color: #fff;
+    ;
+  }
+  
